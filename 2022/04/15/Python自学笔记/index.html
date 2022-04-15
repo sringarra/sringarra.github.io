@@ -28,7 +28,7 @@
 <meta property="og:description" content="[TOC] Python learning notes简单记录一下课程Python基礎課程和網路爬蟲入門實戰里遇到比较苦手的点，包括但不限于斐波那契数列、Class 和Inheritance 的概念以及早期的猜数字 斐波那契数列费了不少力气想要试图输出一个list ，但是老师的例子只是输出数列最末的数字，总之两边都记录一下">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-04-14T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-04-15T05:57:58.669Z">
+<meta property="article:modified_time" content="2022-04-15T08:32:57.770Z">
 <meta property="article:author" content="Lena">
 <meta property="article:tag" content="notes, programming">
 <meta name="twitter:card" content="summary">
@@ -139,7 +139,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-learning-notes"><span class="nav-number">1.</span> <span class="nav-text">Python learning notes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97"><span class="nav-number">1.1.</span> <span class="nav-text">斐波那契数列</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BD%91%E8%AF%BE%E8%80%81%E5%B8%88%E6%B8%85%E7%88%BD%E7%9A%84code%EF%BC%9A"><span class="nav-number">1.1.1.</span> <span class="nav-text">网课老师清爽的code：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%88%91%E8%87%AA%E5%B7%B1%E7%9A%84list-%E5%BD%A2%E5%BC%8F"><span class="nav-number">1.1.2.</span> <span class="nav-text">我自己的list 形式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Class-and-Inheritance"><span class="nav-number">1.2.</span> <span class="nav-text">Class and Inheritance</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-learning-notes"><span class="nav-number">1.</span> <span class="nav-text">Python learning notes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97"><span class="nav-number">1.1.</span> <span class="nav-text">斐波那契数列</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BD%91%E8%AF%BE%E8%80%81%E5%B8%88%E6%B8%85%E7%88%BD%E7%9A%84code%EF%BC%9A"><span class="nav-number">1.1.1.</span> <span class="nav-text">网课老师清爽的code：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%88%91%E8%87%AA%E5%B7%B1%E7%9A%84list-%E5%BD%A2%E5%BC%8F"><span class="nav-number">1.1.2.</span> <span class="nav-text">我自己的list 形式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Class-and-Inheritance"><span class="nav-number">1.2.</span> <span class="nav-text">Class and Inheritance</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%95%E7%8B%AC%E6%B5%8B%E8%AF%95"><span class="nav-number">1.3.</span> <span class="nav-text">单独测试</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#name-variable"><span class="nav-number">1.3.1.</span> <span class="nav-text">name variable</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -223,7 +223,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-04-15 00:00:00 / Modified: 13:57:58" itemprop="dateCreated datePublished" datetime="2022-04-15T00:00:00+08:00">2022-04-15</time>
+      <time title="Created: 2022-04-15 00:00:00 / Modified: 16:32:57" itemprop="dateCreated datePublished" datetime="2022-04-15T00:00:00+08:00">2022-04-15</time>
     </span>
 
   
@@ -260,7 +260,7 @@
 
 <hr>
 <h3 id="Class-and-Inheritance"><a href="#Class-and-Inheritance" class="headerlink" title="Class and Inheritance"></a>Class and Inheritance</h3><p>拼命检查错误结果发现init 拼成了习惯用的intl ，真是极大的耻辱……总之记录一下学习Class 和继承的过程里学会的代码</p>
-<figure class="highlight plaintext"><figcaption><span>Car:</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">    def __init__(self,colour,speed):</span><br><span class="line">        self.colour = colour</span><br><span class="line">        self.speed = speed</span><br><span class="line">        print (&quot;This %s car is moving at %s.&quot; % (self.colour, self.speed))</span><br><span class="line">    def direction(dir,speed):</span><br><span class="line">        print (&quot;This car is moving %s at %s km/h.&quot; % (dir,speed))</span><br><span class="line">carInfo = Car(&quot;purple&quot;,20)</span><br><span class="line">print(carInfo.colour)</span><br><span class="line">carInfo </span><br><span class="line">Car.direction(&quot;backward&quot;,20) </span><br><span class="line">print(&quot;This car is %s.&quot; % carInfo.colour) </span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Car</span>:</span></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self,colour,speed</span>):</span></span><br><span class="line">        self.colour = colour</span><br><span class="line">        self.speed = speed</span><br><span class="line">        <span class="built_in">print</span> (<span class="string">&quot;This %s car is moving at %s.&quot;</span> % (self.colour, self.speed))</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">direction</span>(<span class="params"><span class="built_in">dir</span>,speed</span>):</span></span><br><span class="line">        <span class="built_in">print</span> (<span class="string">&quot;This car is moving %s at %s km/h.&quot;</span> % (<span class="built_in">dir</span>,speed))</span><br><span class="line">carInfo = Car(<span class="string">&quot;purple&quot;</span>,<span class="number">20</span>)</span><br><span class="line"><span class="built_in">print</span>(carInfo.colour)</span><br><span class="line">carInfo </span><br><span class="line">Car.direction(<span class="string">&quot;backward&quot;</span>,<span class="number">20</span>) </span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;This car is %s.&quot;</span> % carInfo.colour) </span><br></pre></td></tr></table></figure>
 
 
 
@@ -291,11 +291,17 @@
 
 
 
+<h3 id="单独测试"><a href="#单独测试" class="headerlink" title="单独测试"></a>单独测试</h3><h4 id="name-variable"><a href="#name-variable" class="headerlink" title="name variable"></a>name variable</h4><p>_<em>name</em>_ 是用来区分本模组与import 模组的标识</p>
+<p>在任意的模组 .py中的name 被print 出的结果均为main，而在Module A 中引入Module B b.py之后，print （b.name)可得到b模组的名字（“b”）</p>
+<p>利用这个性质，可以设定模组内的单独测试的开关，将模组测试的运行条件设定为</p>
+<p>参考<a target="_blank" rel="noopener" href="https://www.freecodecamp.org/news/whats-in-a-python-s-name-506262fe61e8/">What’s in a (Python’s) <strong>name</strong>?</a></p>
+<p>记录一下总算能跑起来的自动测试⬇️</p>
+<p>复刻了之前的预先输入一个数字来测试数值与列表内数值的对应关系，同时想要实现在测试完成后取最终结果输出print 的效果，但这个并不成功……</p>
+<p>如果不在最后return m 的值给extractValue ，最后整个式子的值就会呈现None ，导致明明print 出的结果是True 但还是无法通过测试</p>
+<p><strong>学会了，hightlight 一下重点</strong></p>
+<p>如果想要print 出运算结果的话需要print 在return 之前，因为m 传递给extractValue 数值之后print(m)就不会有结果了……</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">def extractValue(inNum):</span><br><span class="line">    lst2 = [2, 0, 3, 5]</span><br><span class="line">    for n in range(len(lst2)):</span><br><span class="line">        if lst2[n] == inNum:</span><br><span class="line">            m = True</span><br><span class="line">            break</span><br><span class="line">        else:</span><br><span class="line">            m = False</span><br><span class="line">    print(m)</span><br><span class="line">    return m</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    import unittest</span><br><span class="line">    class bmiTestCase(unittest.TestCase):</span><br><span class="line">        def test_valueTest(self):</span><br><span class="line">            result = extractValue(2)</span><br><span class="line">            self.assertEqual(True,result)</span><br><span class="line">    tests = [bmiTestCase(&#x27;test_valueTest&#x27;)]</span><br><span class="line">    suite = unittest.TestSuite()</span><br><span class="line">    suite.addTests(tests)</span><br><span class="line">    runner = unittest.TextTestRunner()</span><br><span class="line">    runner.run(suite)</span><br></pre></td></tr></table></figure>
 
-
-
-
-<p>In regards of <strong>name</strong> :____<a target="_blank" rel="noopener" href="https://www.freecodecamp.org/news/whats-in-a-python-s-name-506262fe61e8/">What’s in a (Python’s) <strong>name</strong>?</a></p>
 
     </div>
 
